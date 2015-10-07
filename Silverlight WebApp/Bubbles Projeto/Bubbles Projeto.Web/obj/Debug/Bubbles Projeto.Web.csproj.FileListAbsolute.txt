@@ -1,0 +1,6 @@
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto.Web\bin\Bubbles Projeto.Web.dll.config
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto.Web\bin\Bubbles Projeto.Web.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto.Web\bin\Bubbles Projeto.Web.pdb
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto.Web\obj\Debug\Bubbles Projeto.Web.csprojResolveAssemblyReference.cache
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto.Web\obj\Debug\Bubbles Projeto.Web.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto.Web\obj\Debug\Bubbles Projeto.Web.pdb

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Bubbles_Projeto.Views.SimpleShooter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:SimpleShooter="clr-namespace:SimpleShooter"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" Width="850" Height="600">
+    
+    <Grid x:Name="LayoutRoot">
+    		<Canvas x:Name="gameRoot" Width="850" Height="600">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/Bubbles Projeto;component/Assets/agua-no-fundo-do-mar-66199.jpg"/>
+            </Canvas.Background>
+        </Canvas>
+    		
+    	
+
+    </Grid>
+</UserControl>

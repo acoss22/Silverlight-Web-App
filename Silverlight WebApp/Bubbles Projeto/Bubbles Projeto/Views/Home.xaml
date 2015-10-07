@@ -1,0 +1,15 @@
+﻿<navigation:Page 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="Bubbles_Projeto.Home"
+           mc:Ignorable="d"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Home Page" Width="1300" Height="600">
+	<Grid HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1300">
+		<Image x:Name="bubbles_texto" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1300" Source="/Bubbles Projeto;component/Assets/bubbles.png"/>
+		<Image x:Name="rainbow" HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="1352" Source="/Bubbles Projeto;component/Assets/rainbow.png" Margin="-52,-13,0,-67"/>
+	</Grid>
+</navigation:Page>

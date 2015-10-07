@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD91EE22-62E2-4A08-A0D2-521DBE3F3AE1}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bubbles_Projeto</RootNamespace>
+    <AssemblyName>Bubbles Projeto</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Bubbles Projeto.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Bubbles_Projeto.App</SilverlightAppEntry>
+    <TestPageFileName>Bubbles_ProjetoTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Curiosidades.xaml.cs">
+      <DependentUpon>Curiosidades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Memory.xaml.cs">
+      <DependentUpon>Memory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Quiz.xaml.cs">
+      <DependentUpon>Quiz.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Views\Curiosidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Memory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Quiz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\Simpsonfont.ttf" />
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\bolha color frenzy highlight.png" />
+    <Resource Include="Assets\bolha color frenzy.png" />
+    <Resource Include="Assets\bolha mirror image highlight.png" />
+    <Resource Include="Assets\bolha mirror image.png" />
+    <Resource Include="Assets\bolha puzzlemania highlight.png" />
+    <Resource Include="Assets\bolha puzzlemania.png" />
+    <Resource Include="Assets\bolha quiz genius highlight.png" />
+    <Resource Include="Assets\bolha quiz genius.png" />
+    <Resource Include="Assets\bubbles.png" />
+    <Resource Include="Assets\fundo.png" />
+    <Resource Include="Assets\rainbow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\card back png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\agua-no-fundo-do-mar-66199.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Curiosidades\cavalo.jpg" />
+    <Resource Include="Assets\Curiosidades\corais.jpg" />
+    <Resource Include="Assets\Curiosidades\estreladomar.jpg" />
+    <Resource Include="Assets\Curiosidades\gaivota.jpg" />
+    <Resource Include="Assets\Curiosidades\golfinho4.jpg" />
+    <Resource Include="Assets\Curiosidades\oceano.jpg" />
+    <Resource Include="Assets\Curiosidades\orca.jpg" />
+    <Resource Include="Assets\Curiosidades\peixes.jpg" />
+    <Resource Include="Assets\Curiosidades\tartaruga.jpg" />
+    <Resource Include="Assets\Curiosidades\tubarao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\bolha decor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\errado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\certo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\turtle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\ocean.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\dolphin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\shark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\urchin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\lobster.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Quiz\sea lion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Curiosidades\Seal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\loud speaker icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\controladoresSom\002926-rounded-glossy-black-icon-media-a-media22-arrow-forward1.png" />
+    <Resource Include="Assets\controladoresSom\002931-rounded-glossy-black-icon-media-a-media27-pause-sign.png" />
+    <Resource Include="Assets\controladoresSom\002934-rounded-glossy-black-icon-media-a-media291-volume1.png" />
+    <Resource Include="Assets\controladoresSom\002935-rounded-glossy-black-icon-media-a-media292-minus3.png" />
+    <Resource Include="Assets\controladoresSom\002936-rounded-glossy-black-icon-media-a-media292-speaker-volume-right.png" />
+    <Resource Include="Assets\controladoresSom\002951-rounded-glossy-black-icon-media-loud-speaker.png" />
+    <Resource Include="Assets\controladoresSom\002953-rounded-glossy-black-icon-media-loudspeaker1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="03 - Revenga.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Assets\puzzlemania.png" />
+    <Resource Include="Assets\play button.png" />
+    <Resource Include="Assets\quiz genius png.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\Silverlight\v5.0\Microsoft.Expression.Blend.Silverlight.targets" />
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubbles Projeto", "Bubbles Projeto\Bubbles Projeto.csproj", "{DD91EE22-62E2-4A08-A0D2-521DBE3F3AE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubbles Projeto.Web", "Bubbles Projeto.Web\Bubbles Projeto.Web.csproj", "{8539B5CD-8C6A-4C54-8B8E-0947549D2A41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD91EE22-62E2-4A08-A0D2-521DBE3F3AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD91EE22-62E2-4A08-A0D2-521DBE3F3AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD91EE22-62E2-4A08-A0D2-521DBE3F3AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD91EE22-62E2-4A08-A0D2-521DBE3F3AE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8539B5CD-8C6A-4C54-8B8E-0947549D2A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8539B5CD-8C6A-4C54-8B8E-0947549D2A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8539B5CD-8C6A-4C54-8B8E-0947549D2A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8539B5CD-8C6A-4C54-8B8E-0947549D2A41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

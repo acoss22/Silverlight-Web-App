@@ -1,0 +1,40 @@
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\Bubbles Projeto.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\Bubbles Projeto.pdb
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\AppManifest.xaml
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\Bubbles Projeto.xap
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\Bubbles_ProjetoTestPage.html
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\System.Windows.Controls.Navigation.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\System.Windows.Controls.Navigation.xml
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\ru\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Bubbles Projeto.csprojResolveAssemblyReference.cache
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\App.g.cs
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Views\Home.g.cs
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\MainPage.g.cs
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Views\Memory.g.cs
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Bubbles Projeto.g.resources
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Bubbles Projeto.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Bubbles Projeto.pdb
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\XapCacheFile.xml
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\Microsoft.Expression.Interactions.dll
+c:\users\andré\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\it\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Views\Curiosidades.g.cs
+C:\Users\André\documents\visual studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\obj\Debug\Views\Quiz.g.cs
+C:\Users\André\Documents\Visual Studio 2013\Projects\Bubbles Projeto\Bubbles Projeto\Bin\Debug\03 - Revenga.mp3

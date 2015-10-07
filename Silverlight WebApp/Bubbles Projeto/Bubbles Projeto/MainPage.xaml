@@ -1,0 +1,504 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:System="clr-namespace:System;assembly=System" x:Class="Bubbles_Projeto.MainPage"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" Width="1300" Height="600">
+	<UserControl.Resources>
+		<Storyboard x:Name="ShowQuizBannerAndPlay">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayQuiz">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-168"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-259.333"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-296"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PlayQuiz">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="312"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="30.667"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="214"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="QuizGenius">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-172"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-40"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="126"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="22"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="QuizGenius">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-278"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-438"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-460"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-532"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="EsconderQuizBannerAndPlay">
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayQuiz" d:IsOptimized="True"/>
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="QuizGenius" d:IsOptimized="True"/>
+		</Storyboard>
+		<Storyboard x:Name="ShowPuzzleBannerAndPlay">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PuzzleMania">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="212"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="68"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-92"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="78"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PuzzleMania">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-230"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-354"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-434"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-542"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PlayQuiz">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-44"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="68"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="176"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="288"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayQuiz">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-142"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-238"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-290"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-292"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="EsconderPuzzleBannerAndPlay">
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PuzzleMania" d:IsOptimized="True"/>
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayPuzzle" d:IsOptimized="True"/>
+		</Storyboard>
+		<Storyboard x:Name="EsconderLastGameBannerAndPlay">
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="LastGame" d:IsOptimized="True"/>
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayLastGame" d:IsOptimized="True"/>
+		</Storyboard>
+		<Storyboard x:Name="EsconderCuriosidadesBannerAndPlay">
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Curiosidades" d:IsOptimized="True"/>
+			<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayCuriosidades" d:IsOptimized="True"/>
+		</Storyboard>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Width="1300" Height="600">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="Bolhas">
+				<VisualStateGroup.Transitions>
+					<VisualTransition/>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="ShowGeniusAndPlay">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="QuizGenius">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="162"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="96"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-20"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-42"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="76"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="96"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="QuizGenius">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-164"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-274"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-336"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-376"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-468"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-502"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-558"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PlayQuiz">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-74"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="4"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="254"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="322"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayQuiz">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-176"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-238"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-284"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-304"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-324"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="ShowPuzzleAndPlay">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PuzzleMania">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="154"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="248"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="118"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-92"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-124"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="40"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PuzzleMania">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-126"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-262"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-362"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-466"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-542"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-600"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PlayPuzzle">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="70"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="202"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="246"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayPuzzle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-266"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-294"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-356"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="ShowCuriosidadesAndPlay">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Curiosidades">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-196"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-256"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-82"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="48"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="70"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Curiosidades">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-148"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-266"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-400"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-460"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-586"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayCuriosidades">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-140"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-210"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-280"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-346"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-380"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PlayCuriosidades">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="322"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="392"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="232"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="360"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="266"/>
+						</DoubleAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="PlayCuriosidades">
+							<EasingPointKeyFrame KeyTime="0:0:1" Value="0.5,0.5"/>
+							<EasingPointKeyFrame KeyTime="0:0:1.2" Value="0.063,0.883"/>
+						</PointAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="ShowLastGameAndPlay">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="LastGame">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-126"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-222"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-290"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-360"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-440"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-546"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="LastGame">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="110"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="82"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-32"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-154"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-42"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-40"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="PlayLastGame">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-48"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="66"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="152"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="240"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="350"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="274"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="PlayLastGame">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-140"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-202"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-238"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-284"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-338"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-372"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Grid.Background>
+			<ImageBrush Stretch="Fill" ImageSource="Assets/fundo.png"/>
+		</Grid.Background>
+
+		<sdk:Frame x:Name="frame" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="850" Height="600" Source="/Views/Home.xaml" Background="{x:Null}" CacheSize="1"/>
+		<Image HorizontalAlignment="Left" Height="78" Margin="1140,490,0,0" VerticalAlignment="Top" Width="75" Source="Assets/bolha decor.png" Stretch="UniformToFill"/>
+		<Image HorizontalAlignment="Left" Height="100" Margin="1145,168,0,0" VerticalAlignment="Top" Width="100" Source="Assets/bolha decor.png"/>
+
+		<HyperlinkButton x:Name="Mirror_Image" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1092,48,0,0" Height="150" Width="150" Style="{StaticResource HyperlinkButtonStyle1}" NavigateUri="MainPage.xaml/frame">
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha mirror image.png"/>
+			</HyperlinkButton.Background>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseEnter" SourceName="Mirror_Image" SourceObject="{Binding ElementName=Mirror_Image}">
+					<ei:ChangePropertyAction x:Name="MouseEnter" PropertyName="Background" TargetName="Mirror_Image" TargetObject="{Binding ElementName=Mirror_Image}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha mirror image highlight.png"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="MouseLeave" SourceName="Mirror_Image" SourceObject="{Binding ElementName=Mirror_Image}">
+					<ei:ChangePropertyAction x:Name="MouseLeave" PropertyName="Background" TargetName="Mirror_Image" TargetObject="{Binding ElementName=Mirror_Image}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush ImageSource="Assets/bolha mirror image.png" Stretch="UniformToFill"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="ShowLastGameAndPlay"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</HyperlinkButton>
+		<HyperlinkButton x:Name="Color_Frenzy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="985,156,0,0" Height="150" Width="150" Style="{StaticResource HyperlinkButtonStyle1}">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseEnter" SourceName="Color_Frenzy" SourceObject="{Binding ElementName=Color_Frenzy}">
+					<ei:ChangePropertyAction x:Name="MouseEnter1" PropertyName="Background" TargetName="Color_Frenzy" TargetObject="{Binding ElementName=Color_Frenzy}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha color frenzy highlight.png"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="MouseLeave" SourceName="Color_Frenzy" SourceObject="{Binding ElementName=Color_Frenzy}">
+					<ei:ChangePropertyAction x:Name="MouseLeave1" PropertyName="Background" TargetName="Color_Frenzy" TargetObject="{Binding ElementName=Color_Frenzy}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush ImageSource="Assets/bolha color frenzy.png" Stretch="UniformToFill"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="ShowCuriosidadesAndPlay"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha color frenzy.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+		<HyperlinkButton x:Name="Puzzlemania" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Margin="1140,254,0,0" Style="{StaticResource HyperlinkButtonStyle1}">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseEnter" SourceName="Puzzlemania" SourceObject="{Binding ElementName=Puzzlemania}">
+					<ei:ChangePropertyAction x:Name="MouseEnter2" PropertyName="Background" TargetName="Puzzlemania" TargetObject="{Binding ElementName=Puzzlemania}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha puzzlemania highlight.png"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="MouseLeave">
+					<ei:ChangePropertyAction x:Name="MouseLeave2" PropertyName="Background" TargetName="Puzzlemania" TargetObject="{Binding ElementName=Puzzlemania}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush ImageSource="Assets/bolha puzzlemania.png" Stretch="UniformToFill"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="ShowPuzzleAndPlay"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha puzzlemania.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+		<HyperlinkButton x:Name="Quiz_Genius" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="150" Margin="1028,363,0,0" Style="{StaticResource HyperlinkButtonStyle1}">
+			<i:Interaction.Triggers>
+				<i:EventTrigger SourceName="Quiz_Genius" SourceObject="{Binding ElementName=Quiz_Genius}" EventName="MouseEnter">
+					<ei:ChangePropertyAction x:Name="MouseEnter3" PropertyName="Background" TargetName="Quiz_Genius" TargetObject="{Binding ElementName=Quiz_Genius}">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha quiz genius highlight.png"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="MouseLeave" SourceName="Quiz_Genius">
+					<ei:ChangePropertyAction x:Name="MouseLeave3" PropertyName="Background" TargetName="Quiz_Genius">
+						<ei:ChangePropertyAction.Value>
+							<ImageBrush ImageSource="Assets/bolha quiz genius.png" Stretch="UniformToFill"/>
+						</ei:ChangePropertyAction.Value>
+					</ei:ChangePropertyAction>
+				</i:EventTrigger>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="ShowGeniusAndPlay"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="Assets/bolha quiz genius.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+		<Image HorizontalAlignment="Left" Height="77" Margin="1064,306,0,0" VerticalAlignment="Top" Width="71" Source="Assets/bolha decor.png"/>
+		<Grid x:Name="ControladorMusica" HorizontalAlignment="Left" Height="38" Margin="1162,10,0,0" VerticalAlignment="Top" Width="128" >
+			<Image x:Name="Play" Source="Assets/controladoresSom/002926-rounded-glossy-black-icon-media-a-media22-arrow-forward1.png" Cursor="Hand" Margin="0,0,98,0" Visibility="Collapsed">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<ei:CallMethodAction x:Name="MouseLeftButtonDownPlay" TargetObject="{Binding ElementName=mediaElement}" MethodName="Play"/>
+						<ei:ChangePropertyAction x:Name="MostrarPause" TargetName="Pause" TargetObject="{Binding ElementName=Pause}" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Visible</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+						<ei:ChangePropertyAction x:Name="EsconderPlay" TargetName="Play" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Image>
+			<Image x:Name="Pause" Source="Assets/controladoresSom/002931-rounded-glossy-black-icon-media-a-media27-pause-sign.png" Cursor="Hand" Margin="0,0,98,0" RenderTransformOrigin="0.5,0.5">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<ei:CallMethodAction x:Name="MouseLeftButtonDownPause" MethodName="Pause" TargetObject="{Binding ElementName=mediaElement}"/>
+						<ei:ChangePropertyAction x:Name="MostrarPlay" TargetName="Play" TargetObject="{Binding ElementName=Play}" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Visible</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+						<ei:ChangePropertyAction x:Name="EsconderPause" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Image>
+			<Image x:Name="Unmute" Source="Assets/controladoresSom/002951-rounded-glossy-black-icon-media-loud-speaker.png" Cursor="Hand" Margin="35,0,53,0" Visibility="Collapsed">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<ei:ChangePropertyAction x:Name="MouseLeftButtonDownUnmute" TargetName="mediaElement" TargetObject="{Binding ElementName=mediaElement}" PropertyName="IsMuted" Value="False"/>
+						<ei:ChangePropertyAction x:Name="MostrarMute" TargetName="Mute" TargetObject="{Binding ElementName=Mute}" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Visible</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+						<ei:ChangePropertyAction x:Name="EsconderUnmute" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Image>
+			<Image x:Name="Mute" Source="Assets/controladoresSom/002953-rounded-glossy-black-icon-media-loudspeaker1.png" Cursor="Hand" Margin="35,0,63,0">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonDown">
+						<ei:ChangePropertyAction x:Name="MouseLeftButtonDownMute" TargetName="mediaElement" TargetObject="{Binding ElementName=mediaElement}" PropertyName="IsMuted" Value="True"/>
+						<ei:ChangePropertyAction x:Name="MostrarUnmute" TargetName="Unmute" TargetObject="{Binding ElementName=Unmute}" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Visible</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+						<ei:ChangePropertyAction x:Name="EsconderMute" PropertyName="Visibility">
+							<ei:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ei:ChangePropertyAction.Value>
+						</ei:ChangePropertyAction>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Image>
+		</Grid>
+		<MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="53" Margin="881,-95,0,0" VerticalAlignment="Top" Width="195" Source="/03 - Revenga.mp3" Volume="0"/>
+		<Image x:Name="QuizGenius" HorizontalAlignment="Left" Height="517" Margin="-60,554,0,-471" VerticalAlignment="Top" Width="928" Source="Assets/quiz genius png.png" RenderTransformOrigin="0.5,0.5">
+			<Image.Effect>
+				<DropShadowEffect ShadowDepth="10"/>
+			</Image.Effect>
+			<Image.RenderTransform>
+				<CompositeTransform/>
+			</Image.RenderTransform>
+		</Image>
+		<HyperlinkButton x:Name="PlayQuiz" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,673,0,-140" RenderTransformOrigin="0.5,0.5" Width="175" Height="60" TargetName="frame" BorderThickness="1" NavigateUri="/Views/Quiz.xaml">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:ControlStoryboardAction Storyboard="{StaticResource EsconderQuizBannerAndPlay}"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Effect>
+				<DropShadowEffect/>
+			</HyperlinkButton.Effect>
+			<HyperlinkButton.RenderTransform>
+				<CompositeTransform/>
+			</HyperlinkButton.RenderTransform>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="Fill" ImageSource="Assets/play button.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+		<Image x:Name="PuzzleMania" HorizontalAlignment="Left" Height="640" Margin="-85,523,0,-563" VerticalAlignment="Top" Width="1052" Source="Assets/puzzlemania.png" RenderTransformOrigin="0.5,0.5">
+			<Image.Effect>
+				<DropShadowEffect ShadowDepth="10"/>
+			</Image.Effect>
+			<Image.RenderTransform>
+				<CompositeTransform/>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="Curiosidades" HorizontalAlignment="Left" Height="150" Margin="330,691,0,-241" VerticalAlignment="Top" Width="174" Source="Assets/card back png.png" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<CompositeTransform/>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="LastGame" HorizontalAlignment="Left" Height="152" Margin="422,647,0,-199" VerticalAlignment="Top" Width="230" Source="Assets/Curiosidades/orca.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<CompositeTransform/>
+			</Image.RenderTransform>
+		</Image>
+		<HyperlinkButton x:Name="PlayCuriosidades" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,673,0,-133" RenderTransformOrigin="0.5,0.5" Width="175" Height="60" TargetName="frame" BorderThickness="1">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:ControlStoryboardAction Storyboard="{StaticResource EsconderQuizBannerAndPlay}"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Effect>
+				<DropShadowEffect/>
+			</HyperlinkButton.Effect>
+			<HyperlinkButton.RenderTransform>
+				<CompositeTransform/>
+			</HyperlinkButton.RenderTransform>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="Fill" ImageSource="Assets/play button.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+		<HyperlinkButton x:Name="PlayPuzzle" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,673,0,-133" RenderTransformOrigin="0.5,0.5" Width="175" Height="60" TargetName="frame" BorderThickness="1">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:ControlStoryboardAction Storyboard="{StaticResource EsconderQuizBannerAndPlay}"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Effect>
+				<DropShadowEffect/>
+			</HyperlinkButton.Effect>
+			<HyperlinkButton.RenderTransform>
+				<CompositeTransform/>
+			</HyperlinkButton.RenderTransform>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="Fill" ImageSource="Assets/play button.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+		<HyperlinkButton x:Name="PlayLastGame" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,673,0,-133" RenderTransformOrigin="0.5,0.5" Width="175" Height="60" TargetName="frame" BorderThickness="1">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:ControlStoryboardAction Storyboard="{StaticResource EsconderQuizBannerAndPlay}"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<HyperlinkButton.Effect>
+				<DropShadowEffect/>
+			</HyperlinkButton.Effect>
+			<HyperlinkButton.RenderTransform>
+				<CompositeTransform/>
+			</HyperlinkButton.RenderTransform>
+			<HyperlinkButton.Background>
+				<ImageBrush Stretch="Fill" ImageSource="Assets/play button.png"/>
+			</HyperlinkButton.Background>
+		</HyperlinkButton>
+
+	</Grid>
+</UserControl>
